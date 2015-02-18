@@ -15,7 +15,6 @@
  */
 package grails.plugins.springsocial.linkedin;
 
-import grails.plugins.springsocial.config.LinkedInReflectionUtils;
 import grails.plugins.springsocial.config.XingReflectionUtils;
 import grails.util.Environment;
 import groovy.lang.GroovyClassLoader;

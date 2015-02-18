@@ -15,9 +15,6 @@
  */
 package org.springframework.social.xing.api.impl;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import org.codehaus.jackson.JsonParser.Feature;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.PropertyNamingStrategy;
@@ -29,12 +26,11 @@ import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
-import org.springframework.social.linkedin.api.impl.json.LinkedInModule;
 import org.springframework.social.oauth1.AbstractOAuth1ApiBinding;
 import org.springframework.social.support.HttpRequestDecorator;
-import org.springframework.social.xing.api.*;
+import org.springframework.social.xing.api.ProfileOperations;
+import org.springframework.social.xing.api.Xing;
 import org.springframework.social.xing.api.impl.json.XingModule;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.client.RestOperations;

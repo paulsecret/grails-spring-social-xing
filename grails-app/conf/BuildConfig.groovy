@@ -28,19 +28,18 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenLocal()
         mavenCentral()
-        // uncomment the below to enable remote dependency resolution
-        // from public Maven repositories
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo("http://repo.dev.outfittery.de/plugins-snapshot-local") { updatePolicy = 'always' }
     }
+
     dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'mysql:mysql-connector-java:5.1.24'
+        compile "com.fasterxml.jackson.core:jackson-core:2.5.1"
+        compile "com.fasterxml.jackson.core:jackson-annotations:2.5.1"
+        compile "com.fasterxml.jackson.core:jackson-databind:2.5.1"
+        compile "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
     }
 
     plugins {
-        compile() ":spring-social-core:0.2.0-SNAPSHOT"
+        compile ":spring-social-core:0.2.0-SNAPSHOT"
 
         build(":release:3.0.1",
                 ":rest-client-builder:1.0.3") {
