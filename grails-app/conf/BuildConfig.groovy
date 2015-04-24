@@ -29,6 +29,7 @@ grails.project.dependency.resolution = {
         mavenLocal()
         mavenCentral()
         mavenRepo("http://repo.dev.outfittery.de/plugins-snapshot-local") { updatePolicy = 'always' }
+        mavenRepo("http://repo.dev.outfittery.de/plugins-release-local")
     }
 
     dependencies {
